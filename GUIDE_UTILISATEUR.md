@@ -100,10 +100,11 @@ Mobile app **compliant with Codex Alimentarius** to scan barcodes and QR codes o
    - Point camera at product barcode
    - Wait for automatic scanning
 
-4. **View result**
-   - 🟢 GREEN Circle = Vegetarian (OK!)
-   - 🔴 RED Circle = Non-vegetarian (Meat or Alcohol)
-   - 🟠 ORANGE Circle = Unknown product
+4. **View result with Codex Alimentarius symbols**
+   - 🟢 **GREEN Circle in green square** (green screen) = Vegetarian (OK!)
+   - 🟤 **BROWN Triangle in brown square** (red screen) = Non-vegetarian (Meat or Alcohol)
+   - 🟠 ORANGE Circle (orange screen) = Unknown product
+   - "Codex Alimentarius Standard" label under the symbol
 
 5. **Scan another product**
    - Press "Scan Another Product"
