@@ -174,7 +174,19 @@ export default function Index() {
         facing="back"
         onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
         barcodeScannerSettings={{
-          barcodeTypes: ['qr', 'ean13', 'ean8', 'upc_a', 'upc_e', 'code128', 'code39'],
+          barcodeTypes: [
+            'qr',
+            'ean13',
+            'ean8',
+            'upc_a',
+            'upc_e',
+            'code128',
+            'code39',
+            'datamatrix',
+            'pdf417',
+            'aztec',
+            'itf14'
+          ],
         }}
       >
         <SafeAreaView style={styles.cameraOverlay}>
