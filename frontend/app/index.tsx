@@ -234,9 +234,8 @@ export default function Index() {
 
     const isVegetarian = scanResult.status === 'vegetarian';
     const isUnknown = !scanResult.found || scanResult.status === 'unknown';
-    const backgroundColor = isUnknown ? '#FF9800' : isVegetarian ? '#4CAF50' : '#F44336';
+    const backgroundColor = isUnknown ? '#FF9800' : isVegetarian ? '#4CAF50' : '#D32F2F';
     const statusText = isUnknown ? t.unknown : isVegetarian ? t.vegetarian : t.nonVegetarian;
-    const icon = isUnknown ? 'help-circle' : isVegetarian ? 'checkmark-circle' : 'close-circle';
 
     return (
       <SafeAreaView style={[styles.container, { backgroundColor }]}>
@@ -251,13 +250,39 @@ export default function Index() {
             <Text style={styles.languageText}>{language.toUpperCase()}</Text>
           </TouchableOpacity>
 
-          {/* Result Circle */}
-          <View style={styles.resultCircle}>
-            <Ionicons name={icon as any} size={150} color="#fff" />
+          {/* Codex Alimentarius Symbol */}
+          <View style={styles.codexContainer}>
+            {!isUnknown && (
+              <View style={[
+                styles.codexSquare,
+                { borderColor: isVegetarian ? '#2E7D32' : '#5D4037' }
+              ]}>
+                {isVegetarian ? (
+                  // Green Circle for Vegetarian
+                  <View style={[styles.codexCircle, { backgroundColor: '#2E7D32' }]} />
+                ) : (
+                  // Brown Triangle for Non-Vegetarian
+                  <View style={styles.triangleContainer}>
+                    <View style={styles.triangle} />
+                  </View>
+                )}
+              </View>
+            )}
+            {isUnknown && (
+              <View style={styles.unknownSymbol}>
+                <Ionicons name="help-circle" size={150} color="#fff" />
+              </View>
+            )}
           </View>
 
           {/* Status Text */}
           <Text style={styles.resultStatus}>{statusText}</Text>
+          
+          {!isUnknown && (
+            <Text style={styles.codexLabel}>
+              {language === 'fr' ? 'Norme Codex Alimentarius' : 'Codex Alimentarius Standard'}
+            </Text>
+          )}
 
           {/* Scan Another Button */}
           <TouchableOpacity
