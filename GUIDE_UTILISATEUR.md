@@ -2,19 +2,21 @@
 
 ## 🇫🇷 Description (Français)
 
-Application mobile pour scanner les codes-barres et QR codes des produits alimentaires au magasin. L'application vérifie automatiquement si les produits contiennent de l'alcool ou de la viande et les classe par couleur :
+Application mobile **conforme au Codex Alimentarius** pour scanner les codes-barres et QR codes des produits alimentaires au magasin. L'application vérifie automatiquement si les produits contiennent de l'alcool ou de la viande et affiche les symboles officiels :
 
-- 🟢 **VERT** = Produits végétariens (sans viande ni alcool)
-- 🔴 **ROUGE** = Produits non végétariens (contenant viande ou alcool)
-- 🟠 **ORANGE** = Produit inconnu (pas dans la base de données)
+### Symboles Codex Alimentarius :
+- 🟢 **Cercle VERT dans carré vert** = Produits végétariens (sans viande ni alcool) - Fond écran vert
+- 🟤 **Triangle MARRON dans carré marron** = Produits non végétariens (contenant viande ou alcool) - Fond écran rouge
+- 🟠 **ORANGE** = Produit inconnu (pas dans la base de données) - Fond écran orange
 
 ## 🇬🇧 Description (English)
 
-Mobile app to scan barcodes and QR codes of food products at the store. The app automatically checks if products contain alcohol or meat and classifies them by color:
+Mobile app **compliant with Codex Alimentarius** to scan barcodes and QR codes of food products at the store. The app automatically checks if products contain alcohol or meat and displays official symbols:
 
-- 🟢 **GREEN** = Vegetarian products (no meat or alcohol)
-- 🔴 **RED** = Non-vegetarian products (contains meat or alcohol)
-- 🟠 **ORANGE** = Unknown product (not in database)
+### Codex Alimentarius Symbols:
+- 🟢 **GREEN Circle in green square** = Vegetarian products (no meat or alcohol) - Green screen background
+- 🟤 **BROWN Triangle in brown square** = Non-vegetarian products (contains meat or alcohol) - Red screen background
+- 🟠 **ORANGE** = Unknown product (not in database) - Orange screen background
 
 ---
 
