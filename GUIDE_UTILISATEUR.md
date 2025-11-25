@@ -23,20 +23,36 @@ Mobile app **compliant with Codex Alimentarius** to scan barcodes and QR codes o
 ## ✨ Fonctionnalités / Features
 
 ### 🇫🇷 Français
-- ✅ Scan de codes-barres (EAN-13, UPC, etc.)
+- ✅ **Conforme Codex Alimentarius** - Symboles officiels (cercle vert / triangle marron)
+- ✅ Scan de codes-barres multiples :
+  - EAN-13, EAN-8 (Europe)
+  - UPC-A, UPC-E (USA)
+  - Code 128, Code 39
+  - Data Matrix
+  - PDF417
+  - Aztec
+  - ITF-14 (Interleaved 2 of 5)
 - ✅ Scan de codes QR
 - ✅ Détection automatique viande/alcool
 - ✅ Interface bilingue (Français/Anglais)
-- ✅ Résultats visuels avec couleurs
+- ✅ Résultats visuels avec symboles Codex + couleurs d'arrière-plan
 - ✅ Pas de connexion requise (après scan)
 - ✅ Pas d'historique (protection vie privée)
 
 ### 🇬🇧 English
-- ✅ Barcode scanning (EAN-13, UPC, etc.)
+- ✅ **Codex Alimentarius Compliant** - Official symbols (green circle / brown triangle)
+- ✅ Multiple barcode types scanning:
+  - EAN-13, EAN-8 (Europe)
+  - UPC-A, UPC-E (USA)
+  - Code 128, Code 39
+  - Data Matrix
+  - PDF417
+  - Aztec
+  - ITF-14 (Interleaved 2 of 5)
 - ✅ QR code scanning
 - ✅ Automatic meat/alcohol detection
 - ✅ Bilingual interface (French/English)
-- ✅ Visual results with colors
+- ✅ Visual results with Codex symbols + background colors
 - ✅ No login required
 - ✅ No history (privacy protection)
 
